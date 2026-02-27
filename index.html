@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SS_Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="project-modal" id="project-modal">
+  <div class="modal-content">
+    <button class="close-modal" id="close-modal">✕</button>
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+    <div class="modal-actions" id="modal-actions"></div>
+    <div class="video-wrapper" id="video-wrapper">
+      <video id="modal-video" width="100%" controls autoplay>
+        <source id="modal-video-source" src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">SS</div>
+
+    <div class="nav-left" id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#playground">Playground</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-btn">☀️</button>
+
+      <button class="hamburger" id="hamburger">
+        ☰
+      </button>
+    </div>
+  </nav>
+
+
+  <h1>Saravanakumar S</h1>
+  <p class="subtitle">Unity Developer | AR/VR | Game Development | 3D
+    Interaction & Prototyping</p>
+
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <!-- <img src="Assets/MainImg.png" alt="Your Name"> -->
+      <img src="Assets/MainImg.png" alt="Saravanakumar">
+
+    </div>
+    <div class="hero-right">
+      <pre>
+  {
+    "role": "Unity Developer",
+
+    "experience": "6+ years",
+
+    "ar_sdks": ["AR Foundation",
+                "ARKit",
+                "ARCore",
+                "Vuforia"],
+
+    "vr_sdks": ["Oculus SDK",
+                "OpenXR",
+                "XR Interaction Toolkit"],
+
+    "web_technologies": ["Firebase",
+                         "Vercel",
+                         "React JS",
+                         "GitHub",
+                         "SVN",
+                         "SourceTree"]
+  }
+      </pre>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I'm a Unity Developer with 6+ years of experience building high-performance 2D, 3D, AR/VR, and AI-powered
+      interactive applications.<br><br>
+
+      Over the years, I've developed indoor navigation systems, 3D visualization platforms, interactive educational
+      applications, science experiment simulations, and large-scale 3D wayfinding systems for expos and booth
+      experiences. I've also integrated text-to-speech and speech-to-text solutions to create more accessible and
+      intelligent user interactions.<br><br>
+
+      My expertise lies in C# programming, scalable Unity architecture, cross-platform deployment (PC, Android, iOS,
+      WebGL), and immersive interaction design. I focus heavily on performance optimization, intuitive user experience,
+      and building systems that are both technically robust and user-friendly.<br><br>
+
+      I enjoy exploring emerging technologies and experimenting with new tools to transform ideas into real-time
+      interactive solutions. Innovation, problem-solving, and thinking beyond conventional approaches drive my work. I
+      thrive on challenges that require creativity, analytical thinking, and building something meaningful from the
+      ground up.<br><br>
+
+      My goal is to continue pushing the boundaries of immersive technology while creating scalable, impactful, and
+      forward-thinking digital experiences.<br><br>
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="timeline">
+      <div class="timeline-progress" id="timeline-progress"></div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Red Baron Integrated Services Pvt. Ltd.</h3>
+            <span class="timeline-date">Mar 2024 – Sep 2025</span>
+          </div>
+          <div class="timeline-role">
+            Unity Developer
+          </div>
+          <p>
+            Led development of a WebGL-based voice-controlled game that increased session duration by 30%.
+            Built AI-driven R&D prototypes integrating motion capture, face tracking, and hand tracking,
+            reducing prototyping time by 40%. Developed AR indoor navigation and real-time pathfinding
+            systems, along with multiple interactive WebGL applications optimized for performance.
+          </p>
+          <div class="tech-tags">
+            <span>Unity 3D</span>
+            <span>C#</span>
+            <span>WebGL</span>
+            <span>Voice Recognition</span>
+            <span>Computer Vision</span>
+            <span>AI Integration</span>
+            <span>ScriptableObjects</span>
+            <span>Addressables</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Equinox Tech Solutions</h3>
+            <span class="timeline-date">Apr 2023 – Mar 2024</span>
+          </div>
+          <div class="timeline-role">
+            Unity Developer
+          </div>
+          <p>
+            Led cross-functional teams to deliver EV installation and maintenance simulations,
+            reducing training time by 40%. Built VR industrial drone simulations and AI-driven
+            product showcases for Oculus Quest 2. Developed multiplayer prototypes with
+            Photon PUN 2 and implemented Speech-to-Text and Text-to-Speech systems.
+          </p>
+          <div class="tech-tags">
+            <span>Unity 3D</span>
+            <span>C#</span>
+            <span>Oculus SDK</span>
+            <span>Oculus Quest 2</span>
+            <span>Photon PUN 2</span>
+            <span>Multiplayer Networking</span>
+            <span>STT/TTS</span>
+            <span>Shader Graph</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Trinity Mobility Pvt. Ltd.</h3>
+            <span class="timeline-date">Feb 2022 – Mar 2023</span>
+          </div>
+          <div class="timeline-role">
+            Software Engineer
+          </div>
+          <p>
+            Contributed to the development of a VR Digital Twin application for real-time IoT
+            device monitoring, improving operational efficiency by 30%. Integrated AI-based
+            pathfinding and voice command systems while optimizing Quest builds to maintain
+            stable 60+ FPS performance.
+          </p>
+          <div class="tech-tags">
+            <span>Unity 3D</span>
+            <span>C#</span>
+            <span>VR Development</span>
+            <span>NavMesh</span>
+            <span>Voice Commands</span>
+            <span>Performance Optimization</span>
+            <span>Oculus Quest</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>ILenSys Technologies Pvt. Ltd.</h3>
+            <span class="timeline-date">Mar 2020 – Jan 2022</span>
+          </div>
+          <div class="timeline-role">
+            Associate Consultant - Interactive Developer
+          </div>
+          <p>
+            Developed interactive 3D manuals and VR training modules for scientific and
+            manufacturing equipment, reducing training errors by 25%. Built multilingual,
+            JSON-driven simulation systems and optimized applications for PC and VR platforms.
+          </p>
+          <div class="tech-tags">
+            <span>Unity 3D</span>
+            <span>C#</span>
+            <span>VR Training</span>
+            <span>JSON</span>
+            <span>Performance Profiling</span>
+            <span>Optimization</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>KnowledgeQ Interactive Consultancy Services Pvt. Ltd.</h3>
+            <span class="timeline-date">Aug 2019 – Feb 2020</span>
+          </div>
+          <div class="timeline-role">
+            Associate Consultant - Interactive Developer
+          </div>
+          <p>
+            Developed 3D educational games improving alphabet recognition by 35% and
+            built AR learning applications using ARKit and Vuforia. Delivered optimized
+            builds across Android, iOS, and PC platforms.
+          </p>
+          <div class="tech-tags">
+            <span>Unity 3D</span>
+            <span>C#</span>
+            <span>ARKit</span>
+            <span>Vuforia</span>
+            <span>Android</span>
+            <span>iOS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3 class="project-title">Bop'n Bounce</h3>
+
+      <p class="project-description">
+        A WebGL-based voice-controlled arcade game where player loudness controls vertical movement.
+      </p>
+
+      <p>
+        Built using Unity WebGL, the game uses real-time microphone input to move the character
+        up and down based on sound intensity. Features include dynamic difficulty, power-ups,
+        power-downs, coin collection, obstacle avoidance, adjustable microphone sensitivity,
+        scoring system, and leaderboard integration.
+      </p>
+
+      <!-- data-description="Bop'n Bounce is a Unity WebGL arcade game that uses real-time microphone loudness analysis to control vertical character movement. Implemented audio amplitude processing, gameplay state management, power-up and obstacle systems, dynamic difficulty scaling, and leaderboard tracking. Optimized for browser performance with memory management and efficient update cycles." -->
+
+      <a href="#" class="open-project" data-title="Bop'n Bounce"
+        data-description="Bop'n Bounce is a WebGL-based voice-controlled arcade game developed in Unity. The player controls vertical movement using real-time microphone loudness input. The game includes power-ups, power-downs, collectibles, dynamic obstacles, adjustable mic sensitivity, scoring mechanics, and leaderboard integration. The project focuses on real-time audio processing, gameplay balancing, and WebGL performance optimization."
+        data-video="Assets/Videos/BopnBounce.mp4" data-live="https://darjeelingdesignco.github.io/BnB_Powerups/">
+        View Details
+      </a>
+    </div>
+    <div class="card">
+      <h3 class="project-title">Evolution of Typography</h3>
+
+      <p class="project-description">
+        A 3D interactive timeline exploring the history of typography through gamified and reading modes.
+      </p>
+
+      <p>
+        An immersive educational experience that takes users through the journey of typography
+        from ancient symbols to modern digital fonts. Features dual interaction modes —
+        Game Mode with interactive hotspots and Read Mode for structured historical exploration.
+      </p>
+
+      <!-- data-description="A Unity-based 3D interactive timeline system showcasing the evolution of typography from ancient symbolic communication to modern digital typefaces. Implemented dual user experience modes: Game Mode with interactive hotspot triggers, state-based navigation, and contextual content expansion; and Read Mode for structured linear exploration. Designed modular content systems to manage historical data dynamically while maintaining immersive visual storytelling. The project blends education, interaction design, and real-time 3D visualization." -->
+
+      <a href="#" class="open-project" data-title="Evolution of Typography"
+        data-description="Evolution of Typography is a 3D interactive and gamified experience built in Unity that explores the historical progression of written communication. The project features two modes: Game Mode, where users interact with timeline-based hotspots to unlock detailed historical insights, and Read Mode, which presents structured explanations without gamification. The experience traces typography from ancient Mesopotamian symbols to handwritten scripts, the invention of the printing press, and modern digital type systems. Designed to combine storytelling, historical research, and interactive 3D visualization, the project emphasizes user engagement, educational clarity, and immersive exploration."
+        data-video="Assets/Videos/EvolutionOfTypography.mp4"
+        data-live="https://darjeelingdesignco.github.io/EvolutionOfTypography_2.0/">
+        View Details
+      </a>
+    </div>
+    <div class="card">
+      <h3 class="project-title">Pattern Generator</h3>
+
+      <p class="project-description">
+        A procedural 2D pattern generation tool with export, drawing, and image-to-pattern conversion modes.
+      </p>
+
+      <p>
+        A WebGL-based creative tool that dynamically generates grid-based patterns
+        using configurable color distributions, aspect ratios, and cell sizes.
+        Includes draw-to-pattern and image-to-pattern modes with customizable
+        monochrome and multicolor outputs, plus high-resolution pattern export.
+      </p>
+
+      <!-- data-description="A Unity WebGL procedural generation tool that creates grid-based patterns using randomized color distribution algorithms. Implemented dynamic resolution scaling, customizable aspect ratios, and cell-based layout systems. Developed a draw-to-pattern pipeline converting user input into structured grid data, and an image processing module that transforms uploaded images into grayscale matrices to generate pattern mappings based on pixel intensity thresholds. Integrated a high-resolution WebGL capture system that isolates render layers to export only the pattern area without UI artifacts." -->
+
+      <a href="#" class="open-project" data-title="Pattern Generator"
+        data-description="Pattern Generator is a 2D procedural design tool built in Unity WebGL. The application generates dynamic grid-based patterns using predefined color distributions and randomized layout logic. Users can customize aspect ratio, grid size, and cell dimensions while regenerating unique layouts with each interaction. The tool includes additional modes: a Draw Mode that converts user sketches into structured patterns, and an Image-to-Pattern mode that processes uploaded images by converting them to grayscale and mapping pixel intensity values to pattern cells. Supports both single-color and multi-color variations. Implemented high-resolution WebGL screenshot exporting that captures only the pattern area without UI elements."
+        data-video="Assets/Videos/PatternGenerator.mp4"
+        data-live="https://darjeelingdesignco.github.io/PatternGenerator_V1/">
+        View Details
+      </a>
+    </div>
+  </section>
+
+  <section class="tech-marquee">
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <!-- First Set -->
+        <img src="Assets/unity.svg" alt="Unity">
+        <img src="Assets/android.svg" alt="android">
+        <img src="Assets/css.svg" alt="css">
+        <img src="Assets/github.svg" alt="github">
+        <img src="Assets/html.svg" alt="html">
+        <img src="Assets/ios.svg" alt="ios">
+        <img src="Assets/javascript.svg" alt="javascript">
+        <img src="Assets/visual-studio.svg" alt="visual-studio">
+        <img src="Assets/visual-studio-code.svg" alt="visual-studio-code">
+
+
+        <!-- Duplicate Set (Important for seamless loop) -->
+        <img src="Assets/unity.svg" alt="Unity">
+        <img src="Assets/android.svg" alt="android">
+        <img src="Assets/css.svg" alt="css">
+        <img src="Assets/github.svg" alt="github">
+        <img src="Assets/html.svg" alt="html">
+        <img src="Assets/ios.svg" alt="ios">
+        <img src="Assets/javascript.svg" alt="javascript">
+        <img src="Assets/visual-studio.svg" alt="visual-studio">
+        <img src="Assets/visual-studio-code.svg" alt="visual-studio-code">
+      </div>
+    </div>
+  </section>
+
+  <section id="playground">
+    <h2>Playground</h2>
+    <div class="play-card">
+      <div class="play-content">
+        <h3>Let’s Build Something Cool 🚀</h3>
+        <p>Move your mouse around.</p>
+      </div>
+    </div>
+    <div class="pixel-box" id="pixel-box"></div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+
+      <p class="footer-text">
+        Let’s build something awesome.
+      </p>
+
+      <div class="footer-icons">
+
+        <!-- Email -->
+        <a href="mailto:saravanakumar003.ss@gmail.com" class="icon-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" class="icon">
+            <path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="2" fill="none" />
+            <rect x="4" y="4" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" />
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/saravana-kumar-96wolvyss/" target="_blank" class="icon-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" class="icon">
+            <rect x="4" y="4" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" />
+            <line x1="8" y1="10" x2="8" y2="16" stroke="currentColor" stroke-width="2" />
+            <circle cx="8" cy="8" r="1" fill="currentColor" />
+            <path d="M12 16v-3a2 2 0 0 1 4 0v3" stroke="currentColor" stroke-width="2" fill="none" />
+          </svg>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/Wolvy-SS" target="_blank" class="icon-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" class="icon">
+            <path d="M12 2a10 10 0 0 0-3 19.5c.5.1.7-.2.7-.5v-2
+                   c-3 .7-3.6-1.2-3.6-1.2-.4-1-1-1.3-1-1.3
+                   -.8-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1
+                   .9 1.6 2.3 1.1 2.9.8.1-.7.3-1.1.6-1.3
+                   -2.4-.3-5-1.2-5-5.3 0-1.2.4-2.1 1-2.9
+                   -.1-.3-.4-1.4.1-2.9 0 0 .8-.3 3 1
+                   a10 10 0 0 1 5.5 0c2.2-1.3 3-1 3-1
+                   .5 1.5.2 2.6.1 2.9.6.8 1 1.7 1 2.9
+                   0 4.1-2.6 5-5 5.3.3.3.6.9.6 1.8v2.7
+                   c0 .3.2.6.7.5A10 10 0 0 0 12 2z" fill="currentColor" />
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const glowCard = document.querySelector(".play-card");
+
+    glowCard.addEventListener("mousemove", (e) => {
+      const rect = glowCard.getBoundingClientRect();
+      glowCard.style.setProperty("--x", `${e.clientX - rect.left}px`);
+      glowCard.style.setProperty("--y", `${e.clientY - rect.top}px`);
+
+      glowCard.style.setProperty(
+        "background",
+        `radial-gradient(circle at ${e.clientX - rect.left}px ${e.clientY - rect.top}px,
+      var(--shadow-glow), var(--bg-card))`
+      );
+    });
+  </script>
+
+  <script>
+    const pixelBox = document.getElementById("pixel-box");
+
+    const rows = 15;
+    const cols = 20;
+
+    // Create pixels
+    for (let i = 0; i < rows * cols; i++) {
+      const pixel = document.createElement("div");
+      pixel.classList.add("pixel");
+
+      pixel.addEventListener("mouseenter", () => {
+        pixel.style.background = "var(--accent)";
+        pixel.style.boxShadow = "0 0 8px var(--accent)";
+
+        setTimeout(() => {
+          pixel.style.background = "var(--bg-card)";
+          pixel.style.boxShadow = "none";
+        }, 500);
+      });
+
+      pixelBox.appendChild(pixel);
+    }
+  </script>
+
+  <script>
+    const sections = document.querySelectorAll("section, footer");
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    toggleBtn.onclick = () => {
+      document.body.classList.toggle("light");
+
+      if (document.body.classList.contains("light")) {
+        toggleBtn.textContent = "🌙";
+      } else {
+        toggleBtn.textContent = "☀️";
+      }
+    };
+  </script>
+
+  <script>
+    const modal = document.getElementById("project-modal");
+    const closeModal = document.getElementById("close-modal");
+    const titleEl = document.getElementById("modal-title");
+    const descEl = document.getElementById("modal-description");
+    const videoEl = document.getElementById("modal-video");
+    const videoSource = document.getElementById("modal-video-source");
+    const videoWrapper = document.getElementById("video-wrapper");
+    const actionsEl = document.getElementById("modal-actions");
+
+    document.querySelectorAll(".open-project").forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        titleEl.textContent = btn.dataset.title;
+        descEl.textContent = btn.dataset.description;
+        actionsEl.innerHTML = "";
+
+        if (btn.dataset.video) {
+          videoSource.src = btn.dataset.video;
+          videoEl.load();
+          videoWrapper.style.display = "block";
+        } else {
+          videoWrapper.style.display = "none";
+        }
+
+        if (btn.dataset.live) {
+          actionsEl.innerHTML += `
+          <a href="${btn.dataset.live}" target="_blank" class="live-link">
+            Live Demo
+            </a>
+        `;
+        }
+
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    function closeProjectModal() {
+      modal.classList.remove("active");
+      document.body.style.overflow = "auto";
+
+      videoEl.pause();
+      videoEl.currentTime = 0;
+      videoSource.src = "";
+    }
+
+    closeModal.addEventListener("click", closeProjectModal);
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeProjectModal();
+      }
+    });
+  </script>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+
+      if (navMenu.classList.contains("active")) {
+        hamburger.textContent = "✕";
+      } else {
+        hamburger.textContent = "☰";
+      }
+    });
+
+    // Auto-close menu when link clicked
+    document.querySelectorAll(".nav-left a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        hamburger.textContent = "☰";
+      });
+    });
+  </script>
+
+  <script>
+    const timelineItems = document.querySelectorAll(".timeline-item");
+
+    const revealTimeline = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      timelineItems.forEach(item => {
+        const boxTop = item.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          item.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealTimeline);
+    revealTimeline();
+  </script>
+
+  <script>
+    const timeline = document.querySelector(".timeline");
+    const progress = document.getElementById("timeline-progress");
+
+    function updateTimelineProgress() {
+      const rect = timeline.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      const totalHeight = timeline.offsetHeight;
+      const visible = windowHeight - rect.top;
+
+      const percent = Math.min(Math.max(visible / totalHeight, 0), 1);
+
+      progress.style.height = percent * 100 + "%";
+    }
+
+    window.addEventListener("scroll", updateTimelineProgress);
+    updateTimelineProgress();
+  </script>
+
+</html>
