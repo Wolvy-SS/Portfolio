@@ -10,9 +10,16 @@
 
 <div class="project-modal" id="project-modal">
   <div class="modal-content">
-    <button class="close-modal" id="close-modal">✕</button>
-    <h2 id="modal-title"></h2>
-    <p id="modal-description"></p>
+
+    <div class="modal-header">
+      <h2 id="modal-title"></h2>
+      <button class="close-modal" id="close-modal">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <div id="modal-description"></div>
+    </div>
+
     <div class="modal-actions" id="modal-actions"></div>
     <div class="video-wrapper" id="video-wrapper">
       <video id="modal-video" width="100%" controls autoplay>
@@ -37,8 +44,30 @@
     </div>
 
     <div class="nav-actions">
-      <button id="theme-toggle" class="theme-btn">☀️</button>
+      <label class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <span class="slider">
 
+          <!-- Moon -->
+          <svg class="icon moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z" />
+          </svg>
+
+          <!-- Sun -->
+          <svg class="icon sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+
+        </span>
+      </label>
       <button class="hamburger" id="hamburger">
         ☰
       </button>
@@ -252,101 +281,383 @@
 
   <section id="projects">
     <h2>Projects</h2>
+    <div class="projects-grid">
 
-    <div class="card">
-      <h3 class="project-title">Bop'n Bounce</h3>
+      <div class="card">
 
-      <p class="project-description">
-        A WebGL-based voice-controlled arcade game where player loudness controls vertical movement.
-      </p>
+        <span class="category">Game</span>
 
-      <p>
-        Built using Unity WebGL, the game uses real-time microphone input to move the character
-        up and down based on sound intensity. Features include dynamic difficulty, power-ups,
-        power-downs, coin collection, obstacle avoidance, adjustable microphone sensitivity,
-        scoring system, and leaderboard integration.
-      </p>
+        <h3 class="project-title">Bop'n Bounce</h3>
 
-      <!-- data-description="Bop'n Bounce is a Unity WebGL arcade game that uses real-time microphone loudness analysis to control vertical character movement. Implemented audio amplitude processing, gameplay state management, power-up and obstacle systems, dynamic difficulty scaling, and leaderboard tracking. Optimized for browser performance with memory management and efficient update cycles." -->
+        <p class="project-description">
+          Voice-controlled WebGL arcade game where loudness controls movement.
+        </p>
 
-      <a href="#" class="open-project" data-title="Bop'n Bounce"
-        data-description="Bop'n Bounce is a WebGL-based voice-controlled arcade game developed in Unity. The player controls vertical movement using real-time microphone loudness input. The game includes power-ups, power-downs, collectibles, dynamic obstacles, adjustable mic sensitivity, scoring mechanics, and leaderboard integration. The project focuses on real-time audio processing, gameplay balancing, and WebGL performance optimization."
-        data-video="Assets/Videos/BopnBounce.mp4" data-live="https://darjeelingdesignco.github.io/BnB_Powerups/">
-        View Details
-      </a>
+        <ul class="project-points">
+          <li>Real-time microphone input control</li>
+          <li>Dynamic obstacles and power-ups</li>
+          <li>Score system with leaderboard</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>Unity</span>
+          <span>WebGL</span>
+          <span>Web Audio</span>
+        </div>
+
+        <a href="#" class="open-project" data-title="Bop'n Bounce" data-description="• WebGL-based arcade game built in Unity.
+• Player controls vertical movement using real-time microphone loudness.
+• Implemented audio amplitude processing for responsive character control.
+• Includes power-ups, power-downs, coin collection, and obstacle avoidance systems.
+• Dynamic difficulty scaling adjusts gameplay challenge over time.
+• Adjustable microphone sensitivity for different environments.
+• Scoring system with leaderboard integration.
+• Optimized for browser performance and efficient update cycles." data-video="Assets/Videos/BopnBounce.mp4"
+          data-live="https://darjeelingdesignco.github.io/BnB_Powerups/">
+          View Details
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <span class="category">Interactive</span>
+
+        <h3 class="project-title">Evolution of Typography</h3>
+
+        <p class="project-description">
+          3D interactive timeline exploring the history of written communication.
+        </p>
+
+        <ul class="project-points">
+          <li>Dual interaction modes</li>
+          <li>Interactive historical timeline</li>
+          <li>Educational 3D storytelling</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>Unity</span>
+          <span>WebGL</span>
+          <span>3D Interaction</span>
+        </div>
+
+        <a href="#" class="open-project" data-title="Evolution of Typography" data-description="• Interactive 3D educational experience built in Unity.
+• Explores the evolution of written communication and typography.
+• Timeline begins with ancient Mesopotamian symbols and progresses to modern digital fonts.
+• Two interaction modes:
+   - Game Mode: interactive hotspots reveal historical insights.
+   - Read Mode: structured linear exploration of content.
+• Implemented modular content systems for scalable historical data.
+• Designed to combine storytelling, research, and real-time 3D visualization."
+          data-video="Assets/Videos/EvolutionOfTypography.mp4"
+          data-live="https://darjeelingdesignco.github.io/EvolutionOfTypography_2.0/">
+          View Details
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <span class="category">Tool</span>
+
+        <h3 class="project-title">Pattern Generator</h3>
+
+        <p class="project-description">
+          Procedural design tool that generates customizable grid patterns.
+        </p>
+
+        <ul class="project-points">
+          <li>Procedural pattern generation</li>
+          <li>Draw-to-pattern conversion</li>
+          <li>Image-to-pattern processing</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>Unity</span>
+          <span>WebGL</span>
+          <span>Procedural</span>
+        </div>
+
+        <a href="#" class="open-project" data-title="Pattern Generator" data-description="• Procedural 2D pattern generation tool built using Unity WebGL.
+• Generates grid-based designs with configurable color distributions.
+• Supports adjustable aspect ratios, grid sizes, and cell dimensions.
+• Draw Mode converts user sketches into structured pattern grids.
+• Image-to-Pattern mode converts uploaded images to grayscale matrices.
+• Pixel intensity mapping generates pattern cells automatically.
+• Supports both monochrome and multi-color variations.
+• Includes high-resolution WebGL export that captures only the pattern area."
+          data-video="Assets/Videos/PatternGenerator.mp4"
+          data-live="https://darjeelingdesignco.github.io/PatternGenerator_V1/">
+          View Details
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <span class="category">Computer Vision</span>
+
+        <h3 class="project-title">OpenCV Physics Interaction</h3>
+
+        <p class="project-description">
+          Real-world objects interact with Unity 2D physics through webcam tracking.
+        </p>
+
+        <ul class="project-points">
+          <li>Webcam contour detection</li>
+          <li>Dynamic physics collider generation</li>
+          <li>Particle feedback on collisions</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>Unity</span>
+          <span>OpenCV</span>
+          <span>Physics2D</span>
+        </div>
+
+        <a href="#" class="open-project" data-title="OpenCV Physics Interaction" data-description="• Experimental Unity application integrating OpenCV with Unity Physics2D.
+• Processes live webcam feed to detect real-world objects.
+• Image preprocessing pipeline improves detection accuracy.
+• Contour detection identifies object boundaries in real time.
+• Detected shapes are converted into dynamic physics colliders.
+• Enables physical interaction between real objects and simulated elements.
+• Collision events trigger particle effects for visual feedback." data-video="Assets/Videos/InteractiveParticles.mp4">
+          View Details
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <span class="category">Computer Vision</span>
+
+        <h3 class="project-title">Face & Hand Tracking Particles</h3>
+
+        <p class="project-description">
+          Interactive particle system driven by real-time face and hand tracking.
+        </p>
+
+        <ul class="project-points">
+          <li>Real-time face detection</li>
+          <li>Hand motion tracking</li>
+          <li>Particles reacting to movement</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>Unity</span>
+          <span>OpenCV</span>
+          <span>Particles</span>
+        </div>
+
+        <a href="#" class="open-project" data-title="Face & Hand Tracking Particles" data-description="• Real-time computer vision project using OpenCV inside Unity.
+• Detects facial regions using OpenCV face detection algorithms.
+• Tracks hand movement from webcam input.
+• Image preprocessing improves detection stability.
+• Detected face and hand positions drive interactive particle systems.
+• Particle emitters respond dynamically to movement and gestures.
+• Demonstrates integration of computer vision with real-time visual effects."
+          data-video="Assets/Videos/FaceHandParticles.mp4">
+          View Details
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <span class="category">AR</span>
+
+        <h3 class="project-title">AR Indoor Navigation</h3>
+
+        <p class="project-description">
+          Augmented reality navigation system for guiding users inside office spaces.
+        </p>
+
+        <ul class="project-points">
+          <li>AR path visualization</li>
+          <li>AI NavMesh pathfinding</li>
+          <li>Real-time spatial tracking</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>Unity</span>
+          <span>ARCore</span>
+          <span>AR Foundation</span>
+        </div>
+
+        <a href="#" class="open-project" data-title="AR Indoor Navigation" data-description="• Android AR navigation application built with Unity.
+• Uses AR Foundation with ARCore for spatial tracking.
+• Overlays navigation paths inside real-world office spaces.
+• AI NavMesh used for calculating optimal paths.
+• Dynamically generates AR waypoints and directional indicators.
+• Designed to guide users through corridors and rooms.
+• Optimized for mobile AR performance and real-time interaction." data-video="Assets/Videos/ARIndoorNavigation.mp4">
+          View Details
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <span class="category">R&D</span>
+
+        <h3 class="project-title">3D Portal Showcase</h3>
+
+        <p class="project-description">
+          Immersive 3D portfolio environment with portal-based navigation.
+        </p>
+
+        <ul class="project-points">
+          <li>First-person exploration</li>
+          <li>Portal-based room transitions</li>
+          <li>Interactive project displays</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>Unity</span>
+          <span>3D Environment</span>
+          <span>Interaction</span>
+        </div>
+
+        <a href="#" class="open-project" data-title="3D Portal Showcase" data-description="• Experimental 3D project showcase built in Unity.
+• Users explore a first-person lobby environment.
+• Lobby contains portals that lead to separate project rooms.
+• Each room presents project content including text, images, videos, and 3D models.
+• Portals provide visual previews of other environments before entering.
+• Developed as an R&D project exploring immersive ways to present applications."
+          data-video="Assets/Videos/PortalShowcase.mp4">
+          View Details
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <span class="category">Game</span>
+
+        <h3 class="project-title">GyroBall</h3>
+
+        <p class="project-description">
+          Tilt-controlled 3D mobile game using device gyroscope.
+        </p>
+
+        <ul class="project-points">
+          <li>Gyroscope-based movement</li>
+          <li>Jump mechanics and obstacles</li>
+          <li>Multiple environment themes</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>Unity</span>
+          <span>Android</span>
+          <span>Gyroscope</span>
+        </div>
+
+        <a href="#" class="open-project" data-title="GyroBall" data-description="• 3D mobile game built in Unity for Android devices.
+• Player controls a rolling ball using gyroscope-based tilt input.
+• Device tilting moves the ball left and right across the environment.
+• Includes jump mechanics for avoiding obstacles.
+• Levels feature multiple themes with different skyboxes and lighting setups.
+• Customizable ball textures allow visual variations.
+• Particle effects and sound effects enhance gameplay feedback." data-video="Assets/Videos/GyroBall.mp4">
+          View Details
+        </a>
+
+      </div>
     </div>
-    <div class="card">
-      <h3 class="project-title">Evolution of Typography</h3>
 
-      <p class="project-description">
-        A 3D interactive timeline exploring the history of typography through gamified and reading modes.
-      </p>
-
-      <p>
-        An immersive educational experience that takes users through the journey of typography
-        from ancient symbols to modern digital fonts. Features dual interaction modes —
-        Game Mode with interactive hotspots and Read Mode for structured historical exploration.
-      </p>
-
-      <!-- data-description="A Unity-based 3D interactive timeline system showcasing the evolution of typography from ancient symbolic communication to modern digital typefaces. Implemented dual user experience modes: Game Mode with interactive hotspot triggers, state-based navigation, and contextual content expansion; and Read Mode for structured linear exploration. Designed modular content systems to manage historical data dynamically while maintaining immersive visual storytelling. The project blends education, interaction design, and real-time 3D visualization." -->
-
-      <a href="#" class="open-project" data-title="Evolution of Typography"
-        data-description="Evolution of Typography is a 3D interactive and gamified experience built in Unity that explores the historical progression of written communication. The project features two modes: Game Mode, where users interact with timeline-based hotspots to unlock detailed historical insights, and Read Mode, which presents structured explanations without gamification. The experience traces typography from ancient Mesopotamian symbols to handwritten scripts, the invention of the printing press, and modern digital type systems. Designed to combine storytelling, historical research, and interactive 3D visualization, the project emphasizes user engagement, educational clarity, and immersive exploration."
-        data-video="Assets/Videos/EvolutionOfTypography.mp4"
-        data-live="https://darjeelingdesignco.github.io/EvolutionOfTypography_2.0/">
-        View Details
-      </a>
-    </div>
-    <div class="card">
-      <h3 class="project-title">Pattern Generator</h3>
-
-      <p class="project-description">
-        A procedural 2D pattern generation tool with export, drawing, and image-to-pattern conversion modes.
-      </p>
-
-      <p>
-        A WebGL-based creative tool that dynamically generates grid-based patterns
-        using configurable color distributions, aspect ratios, and cell sizes.
-        Includes draw-to-pattern and image-to-pattern modes with customizable
-        monochrome and multicolor outputs, plus high-resolution pattern export.
-      </p>
-
-      <!-- data-description="A Unity WebGL procedural generation tool that creates grid-based patterns using randomized color distribution algorithms. Implemented dynamic resolution scaling, customizable aspect ratios, and cell-based layout systems. Developed a draw-to-pattern pipeline converting user input into structured grid data, and an image processing module that transforms uploaded images into grayscale matrices to generate pattern mappings based on pixel intensity thresholds. Integrated a high-resolution WebGL capture system that isolates render layers to export only the pattern area without UI artifacts." -->
-
-      <a href="#" class="open-project" data-title="Pattern Generator"
-        data-description="Pattern Generator is a 2D procedural design tool built in Unity WebGL. The application generates dynamic grid-based patterns using predefined color distributions and randomized layout logic. Users can customize aspect ratio, grid size, and cell dimensions while regenerating unique layouts with each interaction. The tool includes additional modes: a Draw Mode that converts user sketches into structured patterns, and an Image-to-Pattern mode that processes uploaded images by converting them to grayscale and mapping pixel intensity values to pattern cells. Supports both single-color and multi-color variations. Implemented high-resolution WebGL screenshot exporting that captures only the pattern area without UI elements."
-        data-video="Assets/Videos/PatternGenerator.mp4"
-        data-live="https://darjeelingdesignco.github.io/PatternGenerator_V1/">
-        View Details
-      </a>
-    </div>
   </section>
 
   <section class="tech-marquee">
     <div class="marquee-wrapper">
       <div class="marquee-track">
         <!-- First Set -->
-        <img src="Assets/unity.svg" alt="Unity">
-        <img src="Assets/android.svg" alt="android">
-        <img src="Assets/css.svg" alt="css">
-        <img src="Assets/github.svg" alt="github">
-        <img src="Assets/html.svg" alt="html">
-        <img src="Assets/ios.svg" alt="ios">
-        <img src="Assets/javascript.svg" alt="javascript">
-        <img src="Assets/visual-studio.svg" alt="visual-studio">
-        <img src="Assets/visual-studio-code.svg" alt="visual-studio-code">
-
+        <div class="tech-item">
+          <img src="Assets/unity.svg" alt="Unity">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/csharp.svg" alt="csharp">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/android.svg" alt="android">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/visual-studio.svg" alt="visual-studio">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/visual-studio-code.svg" alt="visual-studio-code">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/html.svg" alt="html">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/css.svg" alt="css">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/javascript.svg" alt="javascript">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/meta.svg" alt="meta">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/OpenXR.svg" alt="OpenXR">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/arcore.svg" alt="arcore">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/opencv.svg" alt="opencv">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/github.svg" alt="github">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/firebase.svg" alt="firebase">
+        </div>
 
         <!-- Duplicate Set (Important for seamless loop) -->
-        <img src="Assets/unity.svg" alt="Unity">
-        <img src="Assets/android.svg" alt="android">
-        <img src="Assets/css.svg" alt="css">
-        <img src="Assets/github.svg" alt="github">
-        <img src="Assets/html.svg" alt="html">
-        <img src="Assets/ios.svg" alt="ios">
-        <img src="Assets/javascript.svg" alt="javascript">
-        <img src="Assets/visual-studio.svg" alt="visual-studio">
-        <img src="Assets/visual-studio-code.svg" alt="visual-studio-code">
+
+        <div class="tech-item">
+          <img src="Assets/unity.svg" alt="Unity">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/csharp.svg" alt="csharp">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/android.svg" alt="android">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/visual-studio.svg" alt="visual-studio">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/visual-studio-code.svg" alt="visual-studio-code">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/html.svg" alt="html">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/css.svg" alt="css">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/javascript.svg" alt="javascript">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/meta.svg" alt="meta">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/OpenXR.svg" alt="OpenXR">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/arcore.svg" alt="arcore">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/opencv.svg" alt="opencv">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/github.svg" alt="github">
+        </div>
+        <div class="tech-item">
+          <img src="Assets/firebase.svg" alt="firebase">
+        </div>
       </div>
     </div>
   </section>
@@ -373,15 +684,16 @@
 
         <!-- Email -->
         <a href="mailto:saravanakumar003.ss@gmail.com" class="icon-link" aria-label="Email">
-          <svg viewBox="0 0 24 24" class="icon">
+          <svg viewBox="0 0 24 24" class="icons">
             <path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="2" fill="none" />
             <rect x="4" y="4" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" />
           </svg>
         </a>
 
         <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/saravana-kumar-96wolvyss/" target="_blank" class="icon-link" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" class="icon">
+        <a href="https://www.linkedin.com/in/saravana-kumar-96wolvyss/" target="_blank" class="icon-link"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" class="icons">
             <rect x="4" y="4" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" />
             <line x1="8" y1="10" x2="8" y2="16" stroke="currentColor" stroke-width="2" />
             <circle cx="8" cy="8" r="1" fill="currentColor" />
@@ -391,7 +703,7 @@
 
         <!-- GitHub -->
         <a href="https://github.com/Wolvy-SS" target="_blank" class="icon-link" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" class="icon">
+          <svg viewBox="0 0 24 24" class="icons">
             <path d="M12 2a10 10 0 0 0-3 19.5c.5.1.7-.2.7-.5v-2
                    c-3 .7-3.6-1.2-3.6-1.2-.4-1-1-1.3-1-1.3
                    -.8-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1
@@ -475,17 +787,22 @@
   </script>
 
   <script>
-    const toggleBtn = document.getElementById("theme-toggle");
+    const toggle = document.getElementById("theme-switch");
 
-    toggleBtn.onclick = () => {
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light");
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener("change", () => {
       document.body.classList.toggle("light");
 
       if (document.body.classList.contains("light")) {
-        toggleBtn.textContent = "🌙";
+        localStorage.setItem("theme", "light");
       } else {
-        toggleBtn.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
       }
-    };
+    });
   </script>
 
   <script>
@@ -503,7 +820,18 @@
         e.preventDefault();
 
         titleEl.textContent = btn.dataset.title;
-        descEl.textContent = btn.dataset.description;
+
+        const descLines = btn.dataset.description.split("•").filter(line => line.trim() !== "");
+
+        let listHTML = "<ul class='modal-points'>";
+
+        descLines.forEach(line => {
+          listHTML += `<li>${line.trim()}</li>`;
+        });
+
+        listHTML += "</ul>";
+
+        descEl.innerHTML = listHTML;
         actionsEl.innerHTML = "";
 
         if (btn.dataset.video) {
